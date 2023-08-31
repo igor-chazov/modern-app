@@ -1,0 +1,138 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Fira Sans",
+        "Droid Sans",
+        "Helvetica Neue",
+        sans-serif;
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* ---------------------- Container ---------------------- */
+.container {
+    max-width: 1440px;
+    padding: 0 4rem;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 2.2rem;       
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 1.6rem;       
+    }
+}
+
+/* ---------------------- Link Btn ---------------------- */
+.link {
+    text-decoration: none;
+    color: color: var(--text-color);
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 100%;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    border: none;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    overflow: hidden;
+}
+
+.btn-primary {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.btn-link {
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+select {
+    display: block;
+    width: 100%;   
+    background: none;
+    border: 1px solid var(--border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: inherit;    
+    outline: none;
+}
+
+textarea,
+input {
+    display: block;
+    width: 100%; 
+    background: none;
+    border: 1px solid var(--border-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    caret-color: var(--primary);
+    font-family: inherit;
+    font-size: 100%;
+    color: var(--text-color);
+    cursor: pointer;
+    outline: none;
+}
+
+input:hover,
+input:focus {
+    border-color: var(--primary);
+}
+
+input::placeholder {
+color: var(--border-color);    
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+textarea:hover,
+textarea:focus {
+    border-color: var(--primary);
+}
+
+.w-700 {
+    font-weight: 700;
+}
